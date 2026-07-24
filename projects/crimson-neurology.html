@@ -11,6 +11,12 @@
   <script>
     window.SY_PAGE = "crimson";
     window.SY_IMG_BASE = "../assets/images/";
+    window.SY_SKIP_PRELOADER = !!sessionStorage.getItem("sy_preloader_shown");
+    if (window.SY_SKIP_PRELOADER) {
+      document.write("<style>#sy-preloader{display:none !important;}</style>");
+    } else {
+      sessionStorage.setItem("sy_preloader_shown", "1");
+    }
   </script>
 
   <div class="sy-preloader" id="sy-preloader">

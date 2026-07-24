@@ -833,9 +833,50 @@ function pageContact() {
 
 function initContact() { initNavbar(); }
 
+/* --------------------------------- Page transitions (between separate pages) --------------------------------- */
+/* Smooth fade-out before following a normal internal link, complementing the
+   existing .sy-page-enter fade-in that already runs on every page load. Skips
+   any click that a more specific handler (e.g. the Landing/Home custom
+   transitions) has already handled via preventDefault(). */
+function navigateWithFade(url) {
+  if (window.SY_REDUCED_MOTION) { window.location.href = url; return; }
+  document.body.style.transition = "opacity 320ms cubic-bezier(0.16,1,0.3,1)";
+  document.body.style.opacity = "0";
+  setTimeout(() => { window.location.href = url; }, 300);
+}
+
+function initPageTransitions() {
+  document.addEventListener("click", (e) => {
+    if (e.defaultPrevented) return;
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const link = e.target.closest && e.target.closest("a[href]");
+    if (!link) return;
+    const href = link.getAttribute("href");
+    if (!href || href.charAt(0) === "#" || href.indexOf("mailto:") === 0 || href.indexOf("tel:") === 0) return;
+    if (link.hasAttribute("download")) return;
+    if (link.target && link.target !== "" && link.target !== "_self") return;
+    let url;
+    try { url = new URL(href, window.location.href); } catch (err) { return; }
+    if (url.origin !== window.location.origin) return;
+    if (url.href === window.location.href) return;
+    e.preventDefault();
+    navigateWithFade(url.href);
+  });
+}
+
+/* Guard against the browser's back/forward cache restoring a page frozen
+   mid-fade-out (opacity: 0) from before the previous navigation. */
+window.addEventListener("pageshow", (e) => {
+  if (e.persisted) {
+    document.body.style.transition = "none";
+    document.body.style.opacity = "1";
+  }
+});
+
 /* --------------------------------- Bootstrap --------------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
   initPreloader();
+  initPageTransitions();
   const app = document.getElementById("app");
   const page = window.SY_PAGE;
   const renderers = {

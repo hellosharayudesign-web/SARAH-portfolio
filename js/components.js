@@ -344,6 +344,7 @@ function initNextProjectSection(root) {
 function initPreloader() {
   const el = document.getElementById("sy-preloader");
   if (!el) return;
+  if (window.SY_SKIP_PRELOADER) { el.remove(); return; }
   if (window.SY_REDUCED_MOTION) { el.remove(); return; }
   setTimeout(() => el.classList.add("sy-preloader-out"), 1050);
   setTimeout(() => el.remove(), 1600);
