@@ -81,9 +81,9 @@ const LOGOS = [
 ];
 
 const VIEW_MORE_ITEMS = [
-  { id: "treasury", route: "treasury.html", image: VMP_TREASURY, title: "Government Treasury Finance Platform" },
-  { id: "msme", route: "msme-banking.html", image: VMP_MSME, title: "Designing MSME Banking At Scale" },
-  { id: "pos", route: "pos-research.html", image: VMP_POS, title: "Scaling Enterprise POS Under Pressure" },
+  { id: "treasury", route: "projects/treasury.html", image: VMP_TREASURY, title: "Government Treasury Finance Platform" },
+  { id: "msme", route: "projects/msme-banking.html", image: VMP_MSME, title: "Designing MSME Banking At Scale" },
+  { id: "pos", route: "projects/pos-research.html", image: VMP_POS, title: "Scaling Enterprise POS Under Pressure" },
 ];
 
 /* ---- Treasury case study data ---- */
