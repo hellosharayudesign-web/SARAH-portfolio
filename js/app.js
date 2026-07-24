@@ -415,7 +415,6 @@ function pageMsme() {
     ${csReflection("Designing Products", "People Rely On.", "Enterprise Banking Products Demand More Than Polished Interfaces — They Require Clarity, Consistency And Trust At Every Interaction. This Project Strengthened My Ability To Translate Complex Business Requirements Into Scalable Product Experiences By Collaborating Across Disciplines, Validating Ideas Early And Designing With Long-Term Growth In Mind.")}
 
     ${renderViewMoreProjectsSection(rp)}
-    ${renderNextProjectSection("projects/pos-research.html", "Scaling Enterprise POS Under Pressure", rp)}
     ${renderCTASection(rp)}
     ${renderFooter(rp)}
   </div>`;
