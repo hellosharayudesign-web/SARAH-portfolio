@@ -244,7 +244,7 @@ const ABOUT_STRENGTHS = [
 /* ---- Contact page ---- */
 const CONTACT_ITEMS = [
   { label: "EMAIL", value: "hello.sharayu.design@gmail.com", icon: "mail", href: "mailto:hello.sharayu.design@gmail.com" },
-  { label: "LINKEDIN", value: "linkedin.com/in/sharayuyannawar", icon: "linkExternal", href: "https://linkedin.com/in/sharayuyannawar" },
+  { label: "LINKEDIN", value: "linkedin.com/in/sharayu-design/", icon: "linkExternal", href: "https://www.linkedin.com/in/sharayu-design/" },
   { label: "RESUME", value: "Download CV", icon: "fileCheck", href: "resume.pdf", download: true },
   { label: "LOCATION", value: "Melbourne, Australia", icon: "map", href: null },
 ];
