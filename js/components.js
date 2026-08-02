@@ -91,7 +91,7 @@ function renderFooter(rootPrefix) {
         <div>
           <p class="sy-footer-heading">Connect</p>
           <div class="sy-footer-linklist">
-            <a href="mailto:hello.sharayu.design@gmail.com" class="sy-footer-link sy-footer-link-item">hello.sharayu.design@gmail.com</a>
+            <a href="mailto:connect.sarah.design@gmail.com" class="sy-footer-link sy-footer-link-item">connect.sarah.design@gmail.com</a>
             <a href="tel:+61424323385" class="sy-footer-link sy-footer-link-item">+61 424 323 385</a>
             <a href="https://linkedin.com/in/sharayuyannawar" target="_blank" rel="noopener noreferrer" class="sy-footer-link sy-footer-link-item">LinkedIn</a>
           </div>
