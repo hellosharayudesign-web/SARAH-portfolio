@@ -15,7 +15,7 @@ function renderNavbar(variant, currentPath, rootPrefix) {
   return `
   <header class="sy-navbar-wrap">
     <nav class="sy-navbar ${cls}" id="sy-navbar">
-      <a class="sy-navbar-logo" href="${rootPrefix}${NAV_ROUTES.logo}" style="color:${linkColor};">SHARAYU.DESIGN</a>
+      <a class="sy-navbar-logo" href="${rootPrefix}${NAV_ROUTES.logo}" style="color:${linkColor};">SARAH.DESIGN</a>
       <div class="sy-navbar-links" id="sy-nav-group">
         <span class="sy-nav-highlight" id="sy-nav-highlight" aria-hidden="true"></span>
         <a href="${rootPrefix}${NAV_ROUTES.work}" data-nav-item class="sy-hide-mobile sy-nav-link sy-navbar-link" style="color:${linkColor};opacity:${mutedOpacity(NAV_ROUTES.work)};">
@@ -73,7 +73,7 @@ function renderFooter(rootPrefix) {
   <footer class="sy-footer">
     <div class="sy-footer-inner">
       <div style="max-width:340px;">
-        <p style="font-family:'Roboto',sans-serif;font-size:13px;color:#F5F3EF;margin:0;">SHARAYU.DESIGN</p>
+        <p style="font-family:'Roboto',sans-serif;font-size:13px;color:#F5F3EF;margin:0;">SARAH.DESIGN</p>
         <p style="font-family:'Roboto',sans-serif;font-size:13px;line-height:1.7;color:#9A9AA3;margin-top:14px;">
           Designing thoughtful digital products that simplify complexity and create meaningful user experiences.
           <br />Melbourne, Australia.
@@ -99,7 +99,7 @@ function renderFooter(rootPrefix) {
       </div>
     </div>
     <div class="sy-footer-bottom">
-      <p class="sy-footer-copy">&copy; 2026 Sharayu.Design. All Rights Reserved.</p>
+      <p class="sy-footer-copy">&copy; 2026 Sarah.Design. All Rights Reserved.</p>
     </div>
   </footer>`;
 }
