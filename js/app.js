@@ -22,7 +22,7 @@ function pageLanding() {
           Designing Clarity For<br />Complex Digital Products.
         </h1>
         <p class="sy-fade-up" id="sy-landing-sub" style="margin-top:28px;font-family:'Roboto',sans-serif;font-size:clamp(13px, 1.2vw, 16px);letter-spacing:0.05em;color:#9A9AA3;animation-delay:220ms;">
-          UX/UI Designer · Enterprise Systems · Melbourne, Australia
+          UX/UI Designer · Enterprise Systems · Australia
         </p>
       </div>
     </div>
