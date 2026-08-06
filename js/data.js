@@ -246,5 +246,5 @@ const CONTACT_ITEMS = [
   { label: "EMAIL", value: "connect.sarah.design@gmail.com", icon: "mail", href: "mailto:connect.sarah.design@gmail.com" },
   { label: "LINKEDIN", value: "linkedin.com/in/sarah27-design/", icon: "linkExternal", href: "https://www.linkedin.com/in/sarah27-design/" },
   { label: "RESUME", value: "Download CV", icon: "fileCheck", href: "assets/resume/Sharayu.Design_Resume.pdf", download: true },
-  { label: "LOCATION", value: "Melbourne, Australia", icon: "map", href: null },
+  { label: "LOCATION", value: "Australia", icon: "map", href: null },
 ];
