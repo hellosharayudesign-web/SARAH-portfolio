@@ -76,7 +76,7 @@ function renderFooter(rootPrefix) {
         <p style="font-family:'Roboto',sans-serif;font-size:13px;color:#F5F3EF;margin:0;">SARAH.DESIGN</p>
         <p style="font-family:'Roboto',sans-serif;font-size:13px;line-height:1.7;color:#9A9AA3;margin-top:14px;">
           Designing thoughtful digital products that simplify complexity and create meaningful user experiences.
-          <br />Melbourne, Australia.
+          <br />Australia.
         </p>
       </div>
       <div class="sy-footer-cols">
